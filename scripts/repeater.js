@@ -37,21 +37,6 @@ Array.prototype.slice.call(document.getElementsByClassName('COPY-TO')).forEach(T
     TO.style.transform = "translate(-" + RAND(18, 150) + "px, 0)"})
 
 var ARRAY = [
-    'Профессиональный',
-    'Профессиональный',
-    'Профессиональный',
-    'Могучий',
-    'Могучий',
-    'Блестящий',
-    'Блестящий',
-    'Неотразимый',
-    'Неотразимый',
-    'Неотразимый',
-    'Богоподобный',
-    'Свежий',
-]
-
-if (window.location.href.includes('/en')) ARRAY = [
     'Professional',
     'Professional',
     'Professional',
@@ -69,6 +54,21 @@ if (window.location.href.includes('/en')) ARRAY = [
     'OMG!!! ITS HIM!!!!',
     'OMG!!! ITS HIM!!!!',
     'OMG!!! ITS HIM!!!!',
+]
+
+if (window.location.href.includes('/ru')) ARRAY = [
+    'Профессиональный',
+    'Профессиональный',
+    'Профессиональный',
+    'Могучий',
+    'Могучий',
+    'Блестящий',
+    'Блестящий',
+    'Неотразимый',
+    'Неотразимый',
+    'Неотразимый',
+    'Богоподобный',
+    'Свежий',
 ]
 
 document.getElementById('WHOOPPS').innerText = ARRAY[RAND(0, ARRAY.length)]
